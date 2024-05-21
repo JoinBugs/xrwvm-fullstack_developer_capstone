@@ -4,7 +4,6 @@ img{
 }
 
 .card{
-  border: rgb(103, 102, 105) 3px solid;
   display: flex;  
   flex-direction: column;
   margin-left:5%;
@@ -123,4 +122,35 @@ img{
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
+}
+
+.card {
+  border: none !important;
+}
+
+.card.card-contact-image {
+  border-right: 3px solid rgba(0, 0, 0, 0.65) !important;
+  padding: 0px 40px;
+  text-align: center;
+  border-radius: initial;
+}
+
+.card.card-contact-image img {
+  margin-top: 30px;
+}
+
+.card.card-contact-list ul {
+  list-style: none;
+  text-align:center;
+}
+
+.card.card-contact-list ul label {
+  color: rgba(0, 100, 200, 1);
+  font-weight: bold;
+}
+
+.card.card-contact-list ul a{
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(0, 120, 190, 1)
 }
